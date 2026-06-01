@@ -2,7 +2,12 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-
+// export const metadata = {
+//   title:
+//     "TtFRECH Renovators & Investments - Premium Construction Services in South Africa",
+//   description:
+//     "TtFRECH Renovators & Investments offers top-tier construction, renovation, and investment services across South Africa. From custom residential builds to commercial projects and property investments, we deliver exceptional quality, transparency, and value. Contact us for a free consultation and quote.",
+// };
 function useReveal() {
   useEffect(() => {
     const io = new IntersectionObserver(
@@ -454,8 +459,6 @@ const LT = ({ size = 19 }: { size?: number }) => (
   </div>
 );
 
-
-
 export default function Footer() {
   const pages = [
     ["/", "Home"],
@@ -692,6 +695,11 @@ export default function Footer() {
         </div>
       </div>
       <style>{`@media(max-width:900px){.fg{grid-template-columns:1fr 1fr!important}}@media(max-width:560px){.fg{grid-template-columns:1fr!important}}`}</style>
+      <div className="flex items-center justify-left mt-6 text-xs text-[#C4A248]">
+        <Link href="https://tafadzwa.site/">
+          Created by <span>Tafadzwa</span>
+        </Link>
+      </div>
     </footer>
   );
 }

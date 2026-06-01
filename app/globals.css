@@ -24,3 +24,56 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* 
+ */
+
+ /* HERO */
+@media (max-width: 900px) {
+  .hc {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+}
+
+/* STORY */
+@media (max-width: 900px) {
+  .sc {
+    grid-template-columns: 1fr !important;
+    gap: 50px !important;
+  }
+}
+
+/* VALUES */
+@media (max-width: 900px) {
+  .vc {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* TEAM */
+@media (max-width: 1000px) {
+  .tc {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .tc {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* CERTIFICATIONS */
+@media (max-width: 1000px) {
+  .cc {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .cc {
+    grid-template-columns: 1fr !important;
+  }
+}
