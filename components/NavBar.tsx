@@ -157,7 +157,7 @@ export default function Navbar() {
 
       {/* ── Mobile Drawer ── */}
       <div
-        className={`lg:hidden fixed top-[72px] left-0 right-0 z-[99]
+        className={`lg:hidden fixed top-18 left-0 right-0 z-99
         bg-[rgba(16,24,40,.98)] backdrop-blur-[16px]
         border-b border-[rgba(196,162,72,.1)]
         flex flex-col transition-all duration-300 overflow-hidden
