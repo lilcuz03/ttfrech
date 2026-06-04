@@ -43,7 +43,7 @@ const REVIEWS: Review[] = [
     rating: 5,
     date: "March 2025",
     featured: true,
-    text: "TtFRECH built our family home from the ground up. From the very first meeting, Thabo and his team were professional, transparent about costs, and communicative throughout. They finished two weeks ahead of schedule and the quality of the finish absolutely exceeded our expectations. I wouldn't hesitate to recommend them to anyone.",
+    text: "TtFRECH built our family home from the ground up. From the very first meeting, Freddy and his team were professional, transparent about costs, and communicative throughout. They finished two weeks ahead of schedule and the quality of the finish absolutely exceeded our expectations. I wouldn't hesitate to recommend them to anyone.",
   },
   {
     name: "Ruan Steyn",

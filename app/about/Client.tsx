@@ -609,7 +609,7 @@ export default function AboutPage() {
                       fontFamily: "DM Sans,sans-serif",
                     }}
                   >
-                    — Thabo T. Frech, Founder
+                    — Freddy Chiripanyanga, Founder
                   </div>
                 </div>
               </div>
@@ -677,7 +677,7 @@ export default function AboutPage() {
               </h2>
               {[
                 "TtFRECH Renovators & Investments was founded in 2010 by Tafadzwa , a tradesperson with a simple but powerful belief: South Africans deserve construction services built on honesty, quality, and genuine care.",
-                "Starting with a small team of five in Gauteng, we earned our reputation the hard way — one project at a time, never cutting corners, always delivering what we promised. Word spread, and so did we.",
+                "Starting with a small team of five in KZN, we earned our reputation the hard way — one project at a time, never cutting corners, always delivering what we promised. Word spread, and so did we.",
                 "Today, with 20+ team members, CIDB registration, and over 320 completed projects across South Africa, we remain guided by the same values that got us here: integrity, craftsmanship, and an unwavering commitment to our clients.",
               ].map((p, i) => (
                 <p
