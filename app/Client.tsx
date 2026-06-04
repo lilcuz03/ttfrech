@@ -640,7 +640,7 @@ export default function HomePage() {
               <div className="mt-8">
                 <Link
                   href="/about"
-                  className="inline-block px-8 py-[13px] bg-[#C4A248] text-[#182338]
+                  className="inline-block px-8 py-3.25 bg-[#C4A248] text-[#182338]
                   text-[11px] font-semibold tracking-[1.5px] uppercase hover:bg-[#DFC05A] transition-colors"
                 >
                   Our Full Story
@@ -652,7 +652,7 @@ export default function HomePage() {
 
         {/* ══ SERVICES ══════════════════════════════ */}
         <section className="bg-[#101828] py-24 px-[5%]">
-          <div className="max-w-[1200px] mx-auto">
+          <div className="max-w-300 mx-auto">
             <div className="flex justify-between items-end mb-12 flex-wrap gap-5">
               <div>
                 <div
@@ -678,7 +678,7 @@ export default function HomePage() {
               </div>
               <Link
                 href="/services"
-                className="inline-block px-8 py-[13px] border border-[rgba(245,240,232,.22)]
+                className="inline-block px-8 py-3.25 border border-[rgba(245,240,232,.22)]
                 text-[#F5F0E8] text-[11px] font-medium tracking-[1.5px] uppercase
                 hover:border-[rgba(245,240,232,.5)] transition-colors"
               >
@@ -702,7 +702,7 @@ export default function HomePage() {
                     {svc.n}
                   </div>
                   <div
-                    className="w-[46px] h-[46px] flex items-center justify-center mb-5
+                    className="w-11.5 h-[46px] flex items-center justify-center mb-5
                     bg-[rgba(196,162,72,.07)] border border-[rgba(196,162,72,.18)]"
                   >
                     {SVC_ICONS[i]}

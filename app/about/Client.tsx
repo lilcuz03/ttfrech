@@ -107,14 +107,14 @@ const VALUES = [
 
 const TEAM = [
   {
-    name: "Tafadzwa Chiripanyanga",
+    name: "Freddy Chiripanyanga",
     role: "Founder & CEO",
     bio: "15+ years in construction. Founded TtFRECH with a vision to raise the standard of building in South Africa.",
     initials: "TC",
   },
   {
-    name: "Freddy Chiripanyanga",
-    role: "Head of Project Management",
+    name: "Tafadzwa Chiripanyanga",
+    role: "MD & Head of Operations",
     bio: "Certified PM with a decade of experience delivering complex multi-phase residential and commercial builds.",
     initials: "FC",
   },
@@ -676,7 +676,7 @@ export default function AboutPage() {
                 </em>
               </h2>
               {[
-                "TtFRECH Renovators & Investments was founded in 2010 by Tafadzwa , a tradesperson with a simple but powerful belief: South Africans deserve construction services built on honesty, quality, and genuine care.",
+                "TtFRECH Renovators & Investments was founded in 2010 by Freddy , a tradesperson with a simple but powerful belief: South Africans deserve construction services built on honesty, quality, and genuine care.",
                 "Starting with a small team of five in KZN, we earned our reputation the hard way — one project at a time, never cutting corners, always delivering what we promised. Word spread, and so did we.",
                 "Today, with 20+ team members, CIDB registration, and over 320 completed projects across South Africa, we remain guided by the same values that got us here: integrity, craftsmanship, and an unwavering commitment to our clients.",
               ].map((p, i) => (
