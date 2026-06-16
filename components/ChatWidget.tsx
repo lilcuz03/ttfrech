@@ -63,7 +63,7 @@ export default function ChatWidget() {
           {
             role: "assistant",
             content:
-              "Sorry, something went wrong. Please call us on 073 610 1014.",
+              "Sorry, something went wrong. Please WhatApp call us on +27 73 610 1014 or +27 81 353 2248.",
           },
         ]);
       }
