@@ -696,7 +696,10 @@ export default function Footer() {
       </div>
       <style>{`@media(max-width:900px){.fg{grid-template-columns:1fr 1fr!important}}@media(max-width:560px){.fg{grid-template-columns:1fr!important}}`}</style>
       <div className="flex items-center justify-left mt-6 text-xs text-[#C4A248]">
-        <Link href="https://tafadzwa.site/">
+        <Link
+          href="https://tafadzwa.site/"
+          className="no-underline hover:text-[#DFC05A] transition-colors duration-200 w-full text-center"
+        >
           Created by <span>Tafadzwa</span>
         </Link>
       </div>

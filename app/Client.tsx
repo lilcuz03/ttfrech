@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
+import HeroSlider from "@/components/HeroSlider";
 // import Navbar from "@/components/Navbar";
 // import Footer from "@/components/Footer";
 
@@ -280,168 +281,10 @@ export default function HomePage() {
 
       <main className="font-body">
         {/* ══ HERO ══════════════════════════════════ */}
-        <section className="relative min-h-screen bg-[#101828] flex items-center overflow-hidden">
-          {/* Gradient overlay */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(135deg,rgba(16,24,40,.97) 0%,rgba(24,35,56,.65) 55%,rgba(16,24,40,.92) 100%)",
-            }}
-          />
-          {/* Grid */}
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(196,162,72,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(196,162,72,.04) 1px,transparent 1px)",
-              backgroundSize: "72px 72px",
-            }}
-          />
-          {/* Gold corner */}
-          <div
-            className="absolute top-0 right-0 w-44 h-44 opacity-60"
-            style={{
-              background: "rgba(196,162,72,.06)",
-              clipPath: "polygon(100% 0,100% 100%,0 0)",
-            }}
-          />
-          {/* Glow */}
-          <div
-            className="absolute top-0 right-0 w-96 h-96"
-            style={{
-              background:
-                "radial-gradient(circle at top right,rgba(196,162,72,.07) 0%,transparent 70%)",
-            }}
-          />
-
-          <div
-            className="relative z-10 w-[90%] max-w-[1200px] mx-auto pt-[72px]
-            grid grid-cols-1 lg:grid-cols-2 gap-14 items-center py-20"
-          >
-            {/* Left */}
-            <div>
-              {/* Badge */}
-              <div
-                className="inline-flex items-center gap-2 px-4 py-[7px] mb-7
-                border border-[rgba(196,162,72,.22)] bg-[rgba(196,162,72,.07)]
-                text-[#C4A248] text-[10px] font-semibold tracking-[2px] uppercase"
-              >
-                <span className="w-[6px] h-[6px] rounded-full bg-[#C4A248] shrink-0" />
-                CIDB Registered · Durban, KZN
-              </div>
-
-              <h1
-                className="font-display text-[clamp(46px,6vw,76px)] font-bold leading-[1.05]
-                text-[#F5F0E8] mb-6"
-              >
-                We Build
-                <br />
-                <em className="not-italic text-[#C4A248] font-light italic">
-                  Structures
-                </em>
-                <br />
-                <span className="text-[#E8DDD0]">That Endure.</span>
-              </h1>
-
-              <p
-                className="text-[16px] font-light leading-[1.8] text-[rgba(245,240,232,.58)]
-                max-w-[440px] mb-10"
-              >
-                TtFRECH Renovators &amp; Investments delivers premium
-                residential and commercial construction across Durban and
-                KwaZulu-Natal — crafted with precision, on time and on budget.
-              </p>
-
-              <div className="flex flex-wrap gap-3">
-                <Link
-                  href="/contact"
-                  className="inline-block px-8 py-[13px] bg-[#C4A248] text-[#182338]
-                  text-[11px] font-semibold tracking-[1.5px] uppercase
-                  hover:bg-[#DFC05A] transition-colors"
-                >
-                  Get a Free Quote
-                </Link>
-                <Link
-                  href="/services"
-                  className="inline-block px-8 py-[13px] border border-[rgba(245,240,232,.25)]
-                  text-[#F5F0E8] text-[11px] font-medium tracking-[1.5px] uppercase
-                  hover:border-[rgba(245,240,232,.5)] transition-colors"
-                >
-                  Our Services
-                </Link>
-              </div>
-            </div>
-
-            {/* Right — Stats */}
-            <div className="flex flex-col gap-3">
-              <div className="grid grid-cols-2 gap-3">
-                {STATS.map((s) => (
-                  <div
-                    key={s.n}
-                    className="bg-[rgba(255,255,255,.03)] border border-[rgba(196,162,72,.09)]
-                    p-6 hover:border-[rgba(196,162,72,.35)] hover:bg-[rgba(196,162,72,.04)]
-                    transition-all duration-300"
-                  >
-                    <div className="font-display text-[50px] font-bold text-[#E8DDD0] leading-none mb-1">
-                      {s.n}
-                      <sup className="text-[20px] text-[#C4A248]">{s.s}</sup>
-                    </div>
-                    <div className="text-[12px] text-[rgba(196,162,72,.45)] leading-[1.5] whitespace-pre-line">
-                      {s.l}
-                    </div>
-                  </div>
-                ))}
-              </div>
-              {/* CIDB strip */}
-              <div
-                className="flex items-center gap-4 p-4
-                bg-[rgba(196,162,72,.05)] border border-[rgba(196,162,72,.14)]"
-              >
-                <div
-                  className="w-[42px] h-[42px] shrink-0 flex items-center justify-center
-                  bg-[rgba(196,162,72,.08)] border border-[rgba(196,162,72,.28)]"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="#C4A248"
-                    strokeWidth="1.5"
-                  >
-                    <path d="M12 2l2.5 6.5H21l-5.5 4 2 6.5L12 15l-5.5 3.5 2-6.5L3 8.5h6.5L12 2Z" />
-                  </svg>
-                </div>
-                <div>
-                  <div className="text-[13px] font-medium text-[#E8DDD0] mb-[2px]">
-                    CIDB Registered Contractor
-                  </div>
-                  <div className="text-[11px] text-[rgba(196,162,72,.45)]">
-                    Fully licensed &amp; insured · KwaZulu-Natal
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Scroll nudge */}
-          <div
-            className="absolute bottom-9 left-1/2 flex flex-col items-center gap-2"
-            style={{ animation: "floatDown 2s ease-in-out infinite" }}
-          >
-            <span className="text-[9px] tracking-[2px] uppercase text-[rgba(196,162,72,.3)]">
-              Scroll
-            </span>
-            <div
-              className="w-px h-9"
-              style={{
-                background:
-                  "linear-gradient(to bottom,rgba(196,162,72,.3),transparent)",
-              }}
-            />
-          </div>
-        </section>
+        {/* <section className="relative min-h-screen bg-[#101828] flex items-center overflow-hidden"> */}
+        {/* Gradient overlay */}
+        <HeroSlider />
+        {/* </section> */}
 
         {/* ══ AREAS WE SERVE (marquee) ══════════════ */}
         <div className="bg-[#182338] border-b border-[rgba(196,162,72,.1)] py-4 overflow-hidden">
@@ -651,171 +494,256 @@ export default function HomePage() {
         </section>
 
         {/* ══ SERVICES ══════════════════════════════ */}
-        <section className="bg-[#101828] py-24 px-[5%]">
-          <div className="max-w-300 mx-auto">
+        {/* ══ SERVICES ══════════════════════════════════════════════════════ */}
+        <section className="bg-[#0D1520] py-24 px-[5%]">
+          <div className="max-w-[1200px] mx-auto">
+            {/* Header row */}
             <div className="flex justify-between items-end mb-12 flex-wrap gap-5">
               <div>
-                <div
-                  className="inline-flex items-center gap-3 text-[#C4A248] text-[11px]
-                  font-semibold tracking-[2.5px] uppercase mb-4"
-                >
+                <div className="inline-flex items-center gap-3 text-[#C4A248] text-[11px] font-semibold tracking-[2.5px] uppercase mb-4">
                   <span className="block w-7 h-[1.5px] bg-[#C4A248]" />
                   What We Do
                 </div>
-                <h2
-                  className="font-display text-[clamp(32px,4vw,50px)] font-bold
-                  leading-[1.1] text-[#F5F0E8] mb-2"
-                >
+                <h2 className="font-display text-[clamp(32px,4vw,50px)] font-bold leading-[1.1] text-[#F5F0E8] mb-2">
                   Our Core{" "}
                   <em className="italic text-[#C4A248] font-normal">
                     Services
                   </em>
                 </h2>
-                <p className="text-[15px] font-light text-[rgba(245,240,232,.5)]">
+                <p className="text-[15px] font-light text-[rgba(245,240,232,.55)]">
                   End-to-end construction and renovation across Durban &amp;
                   KZN.
                 </p>
               </div>
               <Link
                 href="/services"
-                className="inline-block px-8 py-3.25 border border-[rgba(245,240,232,.22)]
-                text-[#F5F0E8] text-[11px] font-medium tracking-[1.5px] uppercase
-                hover:border-[rgba(245,240,232,.5)] transition-colors"
+                className="inline-block px-8 py-3.5 border border-[rgba(196,162,72,.35)]
+        text-[#C4A248] text-[11px] font-medium tracking-[1.5px] uppercase
+        hover:bg-[rgba(196,162,72,.08)] hover:border-[#C4A248] transition-all"
               >
                 View All Services
               </Link>
             </div>
 
             {/* Grid */}
-            <div
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px
-              bg-[rgba(196,162,72,.07)] border border-[rgba(196,162,72,.07)]"
-            >
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-[rgba(196,162,72,.12)]">
               {SERVICES.map((svc, i) => (
-                <div
+                <Link
                   key={svc.n}
-                  className={`svc-card rev bg-[rgba(255,255,255,.02)] p-10 relative overflow-hidden
-                  hover:bg-[rgba(196,162,72,.07)] transition-colors cursor-default
-                  ${["", "d1", "d2", "", "d1", "d2"][i]}`}
+                  href="/services"
+                  className={`group svc-card rev relative flex flex-col p-9 bg-[#111D2E]
+          hover:bg-[#152035] transition-all duration-300 overflow-hidden
+          ${["", "d1", "d2", "", "d1", "d2"][i]}`}
                 >
-                  <div className="font-display text-[58px] font-bold text-[rgba(196,162,72,.05)] leading-none mb-1">
+                  {/* Gold top border — slides in on hover */}
+                  <div
+                    className="absolute top-0 left-0 right-0 h-[2px] bg-[#C4A248]
+            scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+                  />
+
+                  {/* Watermark number */}
+                  <div
+                    className="font-display text-[72px] font-bold leading-none mb-3
+            text-[rgba(196,162,72,.08)] group-hover:text-[rgba(196,162,72,.14)]
+            transition-colors duration-300 select-none"
+                  >
                     {svc.n}
                   </div>
+
+                  {/* Icon box */}
                   <div
-                    className="w-11.5 h-[46px] flex items-center justify-center mb-5
-                    bg-[rgba(196,162,72,.07)] border border-[rgba(196,162,72,.18)]"
+                    className="w-12 h-12 flex items-center justify-center mb-6
+            bg-[rgba(196,162,72,.07)] border border-[rgba(196,162,72,.2)]
+            group-hover:bg-[rgba(196,162,72,.14)] group-hover:border-[rgba(196,162,72,.45)]
+            transition-all duration-300"
                   >
                     {SVC_ICONS[i]}
                   </div>
-                  <div className="font-display text-[21px] font-semibold text-[#F5F0E8] mb-2">
+
+                  {/* Title */}
+                  <div
+                    className="font-display text-[20px] font-semibold text-[#F5F0E8] mb-3
+            group-hover:text-[#C4A248] transition-colors duration-200"
+                  >
                     {svc.title}
                   </div>
-                  <p className="text-[13px] font-light leading-[1.75] text-[rgba(245,240,232,.42)] mb-5">
+
+                  {/* Body */}
+                  <p
+                    className="text-[13.5px] font-light leading-[1.8]
+            text-[rgba(245,240,232,.62)] mb-6 flex-1"
+                  >
                     {svc.desc}
                   </p>
-                  <Link
-                    href="/services"
-                    className="text-[#C4A248] text-[11px] font-medium tracking-[1px] uppercase
-                    hover:tracking-[2px] transition-all"
+
+                  {/* CTA */}
+                  <span
+                    className="inline-flex items-center gap-2 text-[#C4A248]
+            text-[11px] font-semibold tracking-[1.5px] uppercase
+            group-hover:gap-3 transition-all duration-200"
                   >
-                    Learn More →
-                  </Link>
-                </div>
+                    Learn More
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M2 7h10M8 3l4 4-4 4"
+                        stroke="currentColor"
+                        strokeWidth="1.4"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+
+                  {/* Subtle corner glow on hover */}
+                  <div
+                    className="absolute bottom-0 right-0 w-32 h-32 rounded-full
+            opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                    style={{
+                      background:
+                        "radial-gradient(circle at bottom right, rgba(196,162,72,.06), transparent 70%)",
+                    }}
+                  />
+                </Link>
               ))}
             </div>
           </div>
         </section>
 
         {/* ══ WHY US ════════════════════════════════ */}
-        <section className="bg-[#F5F0E8] py-24 px-[5%]">
-          <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            {/* Visual */}
+        {/* ══ WHY CHOOSE US ═════════════════════════════════════════════════ */}
+        <section className="bg-[#0D1520] py-24 px-[5%]">
+          <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* ── Left: real photo panel ── */}
             <div className="rev relative order-2 lg:order-1">
-              <div
-                className="w-full aspect-[3/4] relative overflow-hidden flex items-end"
-                style={{
-                  background: "linear-gradient(160deg,#182338 0%,#2B5BA8 100%)",
-                }}
-              >
+              <div className="w-full aspect-[3/4] relative overflow-hidden">
+                {/* Real construction photo */}
+                <img
+                  src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="TtFRECH construction team on site in KwaZulu-Natal"
+                  className="w-full h-full object-cover object-center"
+                />
+                {/* Dark gradient so bottom text is readable */}
                 <div
                   className="absolute inset-0"
                   style={{
-                    backgroundImage:
-                      "repeating-linear-gradient(-45deg,transparent,transparent 20px,rgba(255,255,255,.025) 20px,rgba(255,255,255,.025) 40px)",
+                    background:
+                      "linear-gradient(to top, rgba(13,21,32,.92) 0%, rgba(13,21,32,.3) 55%, transparent 100%)",
                   }}
                 />
-                <div
-                  className="absolute bottom-0 right-0 w-36 h-36"
-                  style={{
-                    background: "#C4A248",
-                    clipPath: "polygon(100% 0,100% 100%,0 100%)",
-                  }}
-                />
-                <div
-                  className="relative z-10 p-8 font-display text-[27px] font-bold
-                  leading-[1.35] text-white/90"
-                >
-                  Your Vision.
-                  <br />
-                  Our Expertise.
-                  <br />
-                  One Result.
+                {/* Bottom-left text */}
+                <div className="absolute bottom-0 left-0 right-0 p-8">
+                  <p className="font-display text-[26px] font-bold leading-[1.35] text-[#F5F0E8]">
+                    Your Vision.
+                    <br />
+                    Our Expertise.
+                    <br />
+                    <em className="not-italic text-[#C4A248]">One Result.</em>
+                  </p>
                 </div>
+                {/* Gold corner accent */}
+                <div
+                  className="absolute top-0 left-0 w-20 h-20"
+                  style={{
+                    background: "rgba(196,162,72,.12)",
+                    clipPath: "polygon(0 0,100% 0,0 100%)",
+                  }}
+                />
               </div>
+
+              {/* CIDB badge — replaces the A+ which has no verifiable authority */}
               <div
-                className="absolute -bottom-5 -right-3 bg-[#C4A248] p-5 text-center
-                w-[118px] border-[3px] border-[#F5F0E8]"
+                className="absolute -bottom-5 -right-3 bg-[#C4A248] p-5 text-center w-[124px]
+        border-[3px] border-[#0D1520]"
               >
-                <strong className="block font-display text-[36px] font-bold text-[#182338] leading-none">
-                  A+
+                <strong className="block font-display text-[13px] font-bold text-[#182338] leading-tight mb-1">
+                  CIDB
                 </strong>
-                <span className="text-[9px] font-semibold text-[#182338] uppercase tracking-[0.5px] opacity-70">
-                  Quality
+                <span className="block text-[9px] font-semibold text-[#182338] uppercase tracking-[0.8px] opacity-80 leading-snug">
+                  Registered
                   <br />
-                  Rating
+                  Contractor
+                </span>
+                <div className="mt-2 w-6 h-[1.5px] bg-[#182338]/40 mx-auto" />
+                <span className="block text-[8px] text-[#182338]/60 mt-1 tracking-[0.5px]">
+                  Est. 2010
                 </span>
               </div>
+
+              {/* Vertical gold line accent */}
+              <div className="absolute -left-4 top-8 bottom-8 w-[2px] bg-gradient-to-b from-transparent via-[#C4A248] to-transparent hidden lg:block" />
             </div>
 
-            {/* Reasons */}
+            {/* ── Right: reasons ── */}
             <div className="order-1 lg:order-2">
-              <div
-                className="rev inline-flex items-center gap-3 text-[#C4A248] text-[11px]
-                font-semibold tracking-[2.5px] uppercase mb-4"
-              >
+              <div className="rev inline-flex items-center gap-3 text-[#C4A248] text-[11px] font-semibold tracking-[2.5px] uppercase mb-4">
                 <span className="block w-7 h-[1.5px] bg-[#C4A248]" />
                 Why Choose Us
               </div>
-              <h2
-                className="rev d1 font-display text-[clamp(32px,3.8vw,48px)] font-bold
-                leading-[1.1] text-[#182338] mb-4"
-              >
+
+              <h2 className="rev d1 font-display text-[clamp(32px,3.8vw,48px)] font-bold leading-[1.1] text-[#F5F0E8] mb-8">
                 The TtFRECH{" "}
-                <em className="italic text-[#2B5BA8] font-normal">
+                <em className="italic text-[#C4A248] font-normal">
                   Difference
                 </em>
               </h2>
-              {WHY.map((r, i) => (
-                <div
-                  key={r.t}
-                  className={`rev d${i + 1} flex gap-6 py-5 border-b border-[#E8DDD0]`}
-                >
+
+              <div className="flex flex-col">
+                {WHY.map((r, i) => (
                   <div
-                    className="font-display text-[30px] font-bold text-[#C4A248] opacity-45
-                    shrink-0 leading-[1.2] w-8 text-right"
+                    key={r.t}
+                    className={`rev d${Math.min(i + 1, 4)} group flex gap-6 py-6 border-b border-[rgba(196,162,72,.1)]
+            hover:border-[rgba(196,162,72,.3)] transition-colors duration-300 last:border-0`}
                   >
-                    {String(i + 1).padStart(2, "0")}
+                    {/* Number */}
+                    <div
+                      className="font-display text-[28px] font-bold text-[#C4A248]/30
+              group-hover:text-[#C4A248]/70 transition-colors duration-300
+              shrink-0 leading-[1.2] w-9 text-right pt-0.5"
+                    >
+                      {String(i + 1).padStart(2, "0")}
+                    </div>
+
+                    {/* Content */}
+                    <div className="flex-1">
+                      <div className="flex items-center gap-3 mb-2">
+                        {/* Gold dot */}
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#C4A248]/40 group-hover:bg-[#C4A248] transition-colors duration-300 shrink-0" />
+                        <h4 className="text-[15px] font-semibold text-[#F5F0E8]">
+                          {r.t}
+                        </h4>
+                      </div>
+                      <p
+                        className="text-[13.5px] font-light leading-[1.75] text-[rgba(245,240,232,.55)]
+                group-hover:text-[rgba(245,240,232,.75)] transition-colors duration-300 pl-[18px]"
+                      >
+                        {r.d}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="text-[15px] font-semibold text-[#182338] mb-1">
-                      {r.t}
-                    </h4>
-                    <p className="text-[14px] font-light leading-[1.7] text-[#6B7280]">
-                      {r.d}
-                    </p>
-                  </div>
+                ))}
+              </div>
+
+              {/* Bottom CTA strip */}
+              <div className="mt-10 flex items-center gap-5 flex-wrap">
+                <Link
+                  href="/about"
+                  className="inline-block px-7 py-3 bg-[#C4A248] text-[#182338]
+          text-[11px] font-semibold tracking-[1.5px] uppercase
+          hover:bg-[#DFC05A] transition-colors"
+                >
+                  Our Full Story
+                </Link>
+                <div className="flex items-center gap-3 text-[rgba(245,240,232,.4)] text-[12px]">
+                  <span className="block w-4 h-[1px] bg-[rgba(196,162,72,.4)]" />
+                  15+ years · 320+ projects · KZN
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </section>
